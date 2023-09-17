@@ -15,7 +15,7 @@ function AlbumItem({ source, text }) {
       <div className=" border-0 overflow-hidden ">
         <img
           src={source}
-          alt="1"
+          alt="123"
           className="w-screen object-center object-cover h-[33.333vh] lg:mx-auto "
         />
       </div>
