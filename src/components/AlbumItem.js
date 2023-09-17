@@ -18,7 +18,7 @@ function AlbumItem({ source, text, onSetAlbum, id }) {
         <img
           src={source}
           alt="123"
-          className="w-screen object-center object-cover h-[33.333vh] lg:mx-auto "
+          className="scale-110 group-hover:scale-100 transition duration-100 ease-in w-screen object-center object-cover h-[33.333vh] lg:mx-auto "
         />
       </div>
     </div>
