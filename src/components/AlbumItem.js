@@ -1,8 +1,10 @@
 import React from "react";
 
-function AlbumItem({ source, text }) {
+function AlbumItem({ source, text, onSetAlbum, id }) {
   return (
-    <div className="relative group transition duration-500 cursor-pointer">
+    <div
+      className="relative group transition duration-500 cursor-pointer"
+      onClick={() => onSetAlbum(id)}>
       {/* WRAPPER HOVER AND TEXT */}
       <div className="absolute inset-0 z-10 flex transition duration-200 ease-in hover:opacity-0">
         <div className="absolute inset-0 bg-[#000000] opacity-70"></div>
