@@ -1,11 +1,28 @@
+import { useState } from "react";
 import "./App.css";
 import Login from "./components/Login";
+import Albums from "./components/Albums";
 
 export default function App() {
+  const [login, setLogin] = useState(false);
+  const [password, setPassword] = useState("");
+
+  function onChangePassword(password) {
+    setPassword(password);
+    if (password === "a") setLogin(!login);
+  }
+
   return (
     <div className="grid place-content-center h-screen">
-      <h1 className="text-3xl underline">Hellow World!1</h1>
-      <Login />
+      {login || (
+        <Login onChangePassword={onChangePassword} password={password} />
+      )}
+
+      {login && (
+        <div>
+          <Albums />
+        </div>
+      )}
     </div>
   );
 }
