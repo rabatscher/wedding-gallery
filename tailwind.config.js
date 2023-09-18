@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        honey: ['"hello honey - Personal Use"'],
+        honey: ['"hellohoney"'],
         book: ['"Book Antiqua"'],
       },
       animation: {
