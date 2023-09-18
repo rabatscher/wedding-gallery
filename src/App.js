@@ -20,7 +20,7 @@ export default function App() {
   }
 
   return (
-    <div className="w-1/2">
+    <div className="w-full">
       {login || (
         <Login onChangePassword={onChangePassword} password={password} />
       )}
