@@ -4,8 +4,9 @@ import ImageItem from "./ImageItem";
 import ReactVisibilitySensor from "react-visibility-sensor";
 import { isVisible } from "@testing-library/user-event/dist/utils";
 import ViewBox from "./ViewBox";
+import { ScrollToTop } from "./ScrollToTop";
 
-function ImageGrid({ album }) {
+function ImageGrid({ album, handleSetAlbum }) {
   let filteredImages = schlossHeidegg
     .slice()
     .filter((image) => image.album === album);
@@ -26,6 +27,7 @@ function ImageGrid({ album }) {
   const [activeImage, setActiveImage] = useState(-1);
   return (
     <div>
+      <ScrollToTop handleSetAlbum={handleSetAlbum} />
       {activeImage === -1 ? (
         ""
       ) : (
@@ -49,7 +51,7 @@ function ImageGrid({ album }) {
               {(isVisible) => (
                 <ImageItem
                   src={el.src}
-                  key={i}
+                  key={"grid" + i}
                   numb={i}
                   alt={el.location}
                   show={imagesShownArray[i]}

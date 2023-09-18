@@ -4,14 +4,16 @@ function Login({ onChangePassword, password }) {
   return (
     <div className="grid place-content-center h-screen">
       <div className="text-center content-center justify-center flex items-center flex-col">
-        <h2 className="text-4xl lg:text-5xl pb-12">Bildergalerie</h2>
+        <h2 className="text-6xl lg:text-8xl pb-12 font-honey">Bildergalerie</h2>
         <img
-          src="logo_lg.png"
+          src="logo_lg2.png"
           className="lg:w-[50vw] w-[75vw] animate-hover "
           alt="Hello"
         />
-        <h1 className="text-4xl lg:text-5xl mt-12">Jessica & Pascal</h1>
-        <h2 className="text-xl lg:text-2xl">4. August 2023</h2>
+        <h1 className="text-6xl lg:text-8xl mt-12 font-honey">
+          Jessica & Pascal
+        </h1>
+        <h2 className="text-3xl lg:text-4xl font-book mt-3">4. August 2023</h2>
         <input
           placeholder="Passwort"
           value={password}

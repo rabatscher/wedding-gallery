@@ -126,6 +126,11 @@ const schlossHeidegg = [
     album: 1,
   },
   {
+    src: "schlossheidegg_026.jpg",
+    location: "Schloss Heidegg",
+    album: 1,
+  },
+  {
     src: "photobox_001.jpg",
     location: "Photobox",
     album: 3,

@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        honey: ['"hello honey - Personal Use"'],
+        book: ['"Book Antiqua"'],
+      },
       animation: {
         hover: "hover 3s ease-in-out infinite",
       },
@@ -14,5 +18,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };

@@ -32,7 +32,7 @@ export default function App() {
           ) : (
             <div>
               <AlbumBar handleSetAlbum={handleSetAlbum} album={album} />
-              <ImageGrid album={album} />
+              <ImageGrid album={album} handleSetAlbum={handleSetAlbum} />
             </div>
           )}
         </div>
