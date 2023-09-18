@@ -6,7 +6,7 @@ function ViewBoxItem({ src, activeImage, handleActiveImage, max, style }) {
   return (
     <>
       <img
-        className="snap-center"
+        className="object-contain"
         id={src}
         src={"/thumbs/" + style + "/" + src}
         alt=""
