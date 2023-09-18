@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { schlossHeidegg } from "../imageList";
 import ImageItem from "./ImageItem";
 import ReactVisibilitySensor from "react-visibility-sensor";
-import { isVisible } from "@testing-library/user-event/dist/utils";
 import ViewBox from "./ViewBox";
 import { ScrollToTop } from "./ScrollToTop";
 
