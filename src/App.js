@@ -6,7 +6,7 @@ import AlbumBar from "./components/AlbumBar";
 import ImageGrid from "./components/ImageGrid";
 
 export default function App() {
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState(true);
   const [password, setPassword] = useState("");
   const [album, setAlbum] = useState(0);
 
