@@ -4,7 +4,7 @@ import { schlossHeidegg } from "../imageList";
 import ViewBoxItem from "./ViewBoxItem";
 import { AiOutlineClose, AiOutlineCloudDownload } from "react-icons/ai";
 
-function ViewBox({ activeImage, handleActiveImage, album }) {
+function ViewBox({ activeImage, handleActiveImage, album, style }) {
   let filteredImages = schlossHeidegg
     .slice()
     .filter((image) => image.album === album);
@@ -89,6 +89,7 @@ function ViewBox({ activeImage, handleActiveImage, album }) {
           activeImage={activeImage}
           handleActiveImage={handleActiveImage}
           max={filteredImages.length}
+          style={style}
         />
       </div>
     </div>

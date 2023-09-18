@@ -35,6 +35,7 @@ function ImageGrid({ album, handleSetAlbum }) {
           activeImage={activeImage}
           handleActiveImage={setActiveImage}
           album={album}
+          style={filteredImages[activeImage].style}
         />
       )}
       <div
@@ -56,6 +57,7 @@ function ImageGrid({ album, handleSetAlbum }) {
                   alt={el.location}
                   show={imagesShownArray[i]}
                   handleActiveImage={setActiveImage}
+                  style={el.style}
                 />
               )}
             </ReactVisibilitySensor>

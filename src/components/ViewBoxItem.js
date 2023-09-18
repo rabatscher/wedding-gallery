@@ -2,10 +2,15 @@ import React from "react";
 
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
-function ViewBoxItem({ src, activeImage, handleActiveImage, max }) {
+function ViewBoxItem({ src, activeImage, handleActiveImage, max, style }) {
   return (
     <>
-      <img className="snap-center" id={src} src={"/thumbs/" + src} alt="" />
+      <img
+        className="snap-center"
+        id={src}
+        src={"/thumbs/" + style + "/" + src}
+        alt=""
+      />
       {activeImage + 1 < max && (
         <div className="fixed top-[47%] right-0 z-50">
           <button

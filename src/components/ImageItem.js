@@ -1,6 +1,6 @@
 import React from "react";
 
-function ImageItem({ src, alt, show, handleActiveImage, numb }) {
+function ImageItem({ src, alt, style, show, handleActiveImage, numb }) {
   return (
     <div
       className={`relative aspect-video group transition duration-500 overflow-hidden cursor-pointer ${
@@ -12,7 +12,7 @@ function ImageItem({ src, alt, show, handleActiveImage, numb }) {
         <div className="absolute inset-3  border-2 border-white opacity-100"></div>
       </div>
       <div className="transition scale-110 group-hover:scale-100 duration-100 ease-in">
-        <img src={"/thumbs/" + src} alt={alt} className="" />
+        <img src={"/thumbs/" + style + "/" + src} alt={alt} className="" />
       </div>
     </div>
   );
