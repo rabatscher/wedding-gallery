@@ -45,7 +45,7 @@ function ImageGrid({ album, handleSetAlbum }) {
           return (
             <ReactVisibilitySensor
               key={i}
-              offset={{ bottom: 80 }}
+              offset={{ bottom: 0 }}
               partialVisibility={true}
               onChange={(isVisible) => imageVisibilityChange(i, isVisible)}>
               {(isVisible) => (
