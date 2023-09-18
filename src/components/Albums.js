@@ -4,7 +4,7 @@ import AlbumItem from "./AlbumItem";
 export default function Albums({ onSetAlbum }) {
   return (
     // WRAPPER
-    <div className="flex flex-col grow gap-0 w-auto">
+    <div className="flex flex-col grow gap-0 w-full ">
       <AlbumItem
         text="Schloss Heidegg"
         source="albums/album_001.jpg"

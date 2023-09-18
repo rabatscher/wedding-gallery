@@ -2,7 +2,7 @@ import React from "react";
 
 function Login({ onChangePassword, password }) {
   return (
-    <div className="grid place-content-center  h-screen m-0 p-0">
+    <div className="grid place-content-center  w-full mt-12 m-0 p-0">
       <div className="text-center content-center justify-center flex items-center flex-col">
         <h2 className="text-6xl lg:text-8xl pb-12 font-honey">Bildergalerie</h2>
         <img
