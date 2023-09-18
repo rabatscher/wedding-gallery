@@ -18,7 +18,7 @@ function Login({ onChangePassword, password }) {
           placeholder="Passwort"
           value={password}
           onChange={(e) => onChangePassword(e.target.value)}
-          className=" bg-[#eedfd3] border-0 border-b-2 border-black text-black placeholder-black text-center text-sm block focus:border-0  md:w-1/2 w-4/5 p-2.5 mt-6"
+          className=" bg-[#eedfd3] border-0 border-b-2 border-black text-black placeholder-black text-center text-[16px] block focus:border-0  md:w-1/2 w-4/5 p-2.5 mt-6"
         />
       </div>
     </div>
