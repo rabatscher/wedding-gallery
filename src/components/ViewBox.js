@@ -50,12 +50,16 @@ function ViewBox({ activeImage, handleActiveImage, album }) {
 
       <div className="fixed bottom-2 right-2 z-40">
         <a
-          href={`images/schifflaende_${
+          href={`images/${
+            { 1: "schlossheidegg", 2: "schifflaende", 3: "photobox" }[album]
+          }_${
             activeImage < 10
               ? "00" + (activeImage + 1)
               : "0" + (activeImage + 1)
           }.jpg`}
-          download={`schifflaende_${
+          download={`${
+            { 1: "schlossheidegg", 2: "schifflaende", 3: "photobox" }[album]
+          }_${
             activeImage < 10
               ? "00" + (activeImage + 1)
               : "0" + (activeImage + 1)
@@ -70,7 +74,7 @@ function ViewBox({ activeImage, handleActiveImage, album }) {
         onClick={() => handleActiveImage(-1)}></div>
 
       {/* </div> */}
-      <div className="scrollbar-hide overflow-x-scroll snap-proximity snap-x flex absoulte text-white z-50 inline-0 aspect-video max-w-[100vw] max-h-[80vh] place-content-center gap-8 ">
+      <div className="flex absoulte text-white z-50 inline-0 max-w-[100vw] max-h-[80vh] place-content-center gap-8 ">
         {/* {filteredImages.map((el, i) => {
           return (
             <>
