@@ -19,7 +19,7 @@ export default function AlbumBar({ handleSetAlbum, album }) {
           </svg>
         </div>
       </button>
-      <h1 className="text-6xl h-20">
+      <h1 className="text-4xl h-20">
         {album === 1 ? "Schloss Heidegg" : ""}
         {album === 2 ? "Schifflände" : ""}
         {album === 3 ? "Photobox" : ""}
