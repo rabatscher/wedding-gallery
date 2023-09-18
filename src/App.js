@@ -26,7 +26,7 @@ export default function App() {
       )}
 
       {login && (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden w-full ">
           {album === 0 ? (
             <Albums onSetAlbum={handleSetAlbum} />
           ) : (
