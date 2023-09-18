@@ -12,7 +12,7 @@ export default function App() {
 
   function onChangePassword(password) {
     setPassword(password);
-    if (password === "ab") setLogin(!login);
+    if (password === "Z") setLogin(!login);
   }
 
   function handleSetAlbum(id) {
